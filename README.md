@@ -37,7 +37,7 @@
 
 ```
 ## git clone this repository
-git clone https://github.com/JUSTzhuzhu/SCMSR_test.git
+git clone https://github.com/wzhu121/SCMSR.git
 cd SCMSR
 
 # create an environment with python >= 3.10
