@@ -271,7 +271,7 @@ def main(args):
                 
                 image.save(f'{args.output_dir}/sample{str(sample_idx).zfill(2)}/{name}.png')
                 # image.save(f'{args.output_dir}/sample{str(sample_idx).zfill(2)}_{name}.png')
-            print(f"-------------total_time:{total_time}")
+            # print(f"-------------total_time:{total_time}")
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
