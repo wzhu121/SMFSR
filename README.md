@@ -1,5 +1,5 @@
 <div align="center">
-  <h2>SCMSR: Splitting Consistency Matching for One-Step Real-World Image Super-Resolution</h2>
+  <h2>Noise-Started One-Step Real-World Super-Resolution via LR-Conditioned SplitMeanFlow and GAN Refinement</h2>
 
   <p>
     Wei Zhu<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -24,6 +24,7 @@
 :star: If SCMSR is helpful to you, please help star this repo. Thanks! 
 
 ## 🌟 Overview Framework
+
 <div align="center">
   <img src="image/method.png" alt="" width="100%">
 </div>
