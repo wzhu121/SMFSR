@@ -3,15 +3,17 @@
 
   <p>
     Wei Zhu<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+    Kai Zhang<sup>2,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;
     Yu Zheng<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
     Lei Luo<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
-    Kai Zhang<sup>2,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+    Yong Guo<sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;
     Jian Yang<sup>1,2,*</sup>
   </p>
 
   <p>
     <sup>1</sup>Nanjing University of Science and Technology&nbsp;&nbsp;&nbsp;&nbsp;
-    <sup>2</sup>Nanjing University
+    <sup>2</sup>Nanjing University&nbsp;&nbsp;&nbsp;&nbsp;
+    <sup>3</sup>Huawei
   </p>
 </div>
 
