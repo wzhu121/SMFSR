@@ -49,12 +49,12 @@
 
 ```
 ## git clone this repository
-git clone https://github.com/wzhu121/SCMSR.git
-cd SCMSR
+git clone https://github.com/wzhu121/SMFSR.git
+cd SMFSR
 
 # create an environment with python >= 3.10
-conda create -n SCMSR python=3.10
-conda activate SCMSR
+conda create -n SMFSR python=3.10
+conda activate SMFSR
 pip install -r requirements.txt 
 ```
 
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 ## 🍭 Inference with script
 **Step 1: Download Checkpoints**
 
-- Download the [[scmsr_f and scmsr_q](https://huggingface.co/zw121/SCMSR)] checkpoints and place them in the following directories: `preset/scmsr_f` and `preset/scmsr_q`.
+- Download the [[scmsr_f and scmsr_q](https://huggingface.co/zw121/SMFSR)] checkpoints and place them in the following directories: `preset/smfsr_f` and `preset/smfsr_q`.
 - Download the [[stable-diffusion-3.5-medium](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)] checkpoints and place it in the `preset/stable-diffusion-3.5-medium` directory.
 - Download the [[clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336)] and [[llava-v1.5-13b](https://huggingface.co/liuhaotian/llava-v1.5-13b)] and place them in the `llava_ckpt` directory.
 
