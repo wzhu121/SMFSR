@@ -62,7 +62,7 @@ pip install -r requirements.txt
 ## 🍭 Inference with script
 **Step 1: Download Checkpoints**
 
-- Download the [[scmsr_f and scmsr_q](https://huggingface.co/zw121/SMFSR)] checkpoints and place them in the following directories: `preset/smfsr_f` and `preset/smfsr_q`.
+- Download the [[smfsr_f and smfsr_q](https://huggingface.co/zw121/SMFSR)] checkpoints and place them in the following directories: `preset/smfsr_f` and `preset/smfsr_q`.
 - Download the [[stable-diffusion-3.5-medium](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)] checkpoints and place it in the `preset/stable-diffusion-3.5-medium` directory.
 - Download the [[clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336)] and [[llava-v1.5-13b](https://huggingface.co/liuhaotian/llava-v1.5-13b)] and place them in the `llava_ckpt` directory.
 
