@@ -90,7 +90,54 @@ bash scripts/test_wllava.sh
 ```
 ## 🔥 Training
 
-To be updated.
+**Step 1: Download the training data**
+
+Download the training datasets including `DIV2K`, `DIV8K`, `Flickr2K`, `Flickr8K`, and `NKUSR8K` dataset.
+
+**Step 2: Download Teacher Checkpoint**
+
+- Download the [[Teacher](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)] checkpoints and place it in the `preset` directory.
+
+**Step 3: Prepare the training data**
+
+- Following [[Dit4SR](https://github.com/Adam-duan/DiT4SR)], you can generate the LR-HR pairs for training.
+
+**Data Structure After Preprocessing**
+
+```
+preset/datasets/training_datasets/ 
+    └── gt
+        └── 0000001.png # GT images, (3, 512, 512)
+        └── ...
+    └── sr_bicubic
+        └── 0000001.png # Bicubic LR images, (3, 512, 512)
+        └── ...
+    └── prompt_txt
+        └── 0000001.txt # prompts for teacher model and lora model
+        └── ...
+    └── prompt_embeds
+        └── NULL_prompt_embeds.pt # SD3 prompt embedding tensors, (154, 4096)
+        └── 0000001.pt 
+        └── ...
+    └── pooled_prompt_embeds
+        └── NULL_pooled_prompt_embeds.pt # SD3 pooled embedding tensors, (2048,)
+        └── 0000001.pt 
+        └── ...
+    └── latent_hr
+        └── 0000001.pt # SD3 latent space tensors, (16, 64, 64)
+        └── ...
+    └── latent_lr
+        └── 0000001.pt # SD3 latent space tensors, (16, 64, 64)
+        └── ...
+```
+
+**Step 4: Start train**
+
+Use the following command to start the training process:
+
+```bash
+bash bash/train.sh
+```
 
 
 ## 🪪  License
