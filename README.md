@@ -13,10 +13,10 @@
   </p>
 
   <p>
-    <sup>1</sup>Nanjing University of Science and Technology&nbsp;&nbsp;&nbsp;&nbsp;
-    <sup>2</sup>Nanjing University&nbsp;&nbsp;&nbsp;&nbsp;
-    <sup>3</sup>South China University of Technology
-  </p>
+  <sup>1</sup>Nanjing University of Science and Technology<br>
+  <sup>2</sup>Nanjing University<br>
+  <sup>3</sup>South China University of Technology
+</p>
 </div>
 
 <p align="center">
