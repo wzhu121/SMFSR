@@ -22,6 +22,8 @@
 <div align="center">
 <a href='https://arxiv.org/abs/2605.09328'><img src='https://img.shields.io/badge/Paper-Arxiv-b31b1b.svg'></a> &nbsp;&nbsp;
 <a href='https://wzhu121.github.io/'><img src='https://img.shields.io/badge/Project-Page-4CAF50.svg'></a> &nbsp;&nbsp;
+<a href='https://huggingface.co/zw121/SMFSR/blob/main/SMFSR_supp.pdf'><img src='https://img.shields.io/badge/Paper-Supplematary-orange.svg'></a> &nbsp;&nbsp;
+
 </div>
 
 <!-- <div align="center">
@@ -96,7 +98,7 @@ Download the training datasets including `DIV2K`, `DIV8K`, `Flickr2K`, `Flickr8K
 
 **Step 2: Download Teacher Checkpoint**
 
-- Download the [[Teacher](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)] checkpoints and place it in the `preset` directory.
+- Download the [[Teacher](https://huggingface.co/zw121/SMFSR/tree/main)] checkpoints and place it in the `preset` directory.
 
 **Step 3: Prepare the training data**
 
