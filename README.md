@@ -22,6 +22,7 @@
 <div align="center">
 <a href='https://arxiv.org/abs/2605.09328'><img src='https://img.shields.io/badge/Paper-Arxiv-b31b1b.svg'></a> &nbsp;&nbsp;
 <a href='https://wzhu121.github.io/'><img src='https://img.shields.io/badge/Project-Page-4CAF50.svg'></a> &nbsp;&nbsp;
+</div>
 
 <!-- <div align="center">
   <a href="https://wzhu121.github.io/">
