@@ -1,11 +1,13 @@
 <div align="center">
-  <h2>Noise-Started One-Step Real-World Super-Resolution via LR-Conditioned SplitMeanFlow and GAN Refinement</h2>
+  <h2>Noise-Started One-Step Real-World Super-Resolution via LR-Conditioned SplitMeanFlow and GAN Refinement </h2>
+
+  🚩 Accepted by NeurIPS 2026 Spotlight
 
   <p>
     Wei Zhu<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
     Kai Zhang<sup>2,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;
     Yu Zheng<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
-    Lei Luo<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+    Lei Luo<sup>1,*</sup>&nbsp;&nbsp;&nbsp;&nbsp;
     Yong Guo<sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;
     Jian Yang<sup>1,2,*</sup>
   </p>
@@ -13,12 +15,16 @@
   <p>
     <sup>1</sup>Nanjing University of Science and Technology&nbsp;&nbsp;&nbsp;&nbsp;
     <sup>2</sup>Nanjing University&nbsp;&nbsp;&nbsp;&nbsp;
-    <sup>3</sup>Huawei
+    <sup>3</sup>South China University of Technology
   </p>
 </div>
 
 <p align="center">
   <br>
+  <a href="https://wzhu121.github.io/">
+    <img src="https://img.shields.io/badge/Project-Page-4CAF50.svg">
+  </a>
+  &nbsp;
   <a href="https://arxiv.org/abs/2605.09328">
     <img src="https://img.shields.io/badge/arXiv-2605.09328-b31b1b.svg">
   </a>
@@ -84,9 +90,21 @@ bash scripts/test_wllava.sh
 To be updated.
 
 
-## License
+## 🪪  License
 This project is released under the [Apache 2.0 license](LICENSE).
 
-## Acknowledgement
-This project is based on [DiT4SR](https://github.com/Adam-duan/DiT4SR/tree/main).
+## 🙏 Acknowledgement
+This project is based on DiT4SR.
 Thanks for the awesome work!
+
+## 📄 Citation
+If our work assists your research, feel free to give us a star ⭐ or cite us using:
+
+```bibtex
+@misc{zhu2026SMFSR,
+title={Noise-Started One-Step Real-World Super-Resolution via LR-Conditioned SplitMeanFlow and GAN Refinement}, 
+author={Wei Zhu and Kai Zhang and Yu Zheng and Lei Luo and Yong Guo and Jian Yang},
+journal={arXiv preprint arXiv:2605.09328},
+year={2026}
+}
+```
