@@ -46,7 +46,7 @@
 - **2026.3.8**: Create this repo.
 
 
-:star: If SCMSR is helpful to you, please help star this repo. Thanks! 
+:star: If SMFSR is helpful to you, please help star this repo. Thanks! 
 
 ## 🌟 Overview Framework
 
