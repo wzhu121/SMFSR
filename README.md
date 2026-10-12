@@ -17,11 +17,16 @@
     <sup>2</sup>Nanjing University<br>
     <sup>3</sup>South China University of Technology
   </p>
+  <p>
+  <small><sup>*</sup> Corresponding author</small>
+  </p>
 </div>
 
 <div align="center">
 <a href='https://arxiv.org/abs/2605.09328'><img src='https://img.shields.io/badge/Paper-Arxiv-b31b1b.svg'></a> &nbsp;&nbsp;
 <a href='https://wzhu121.github.io/'><img src='https://img.shields.io/badge/Project-Page-4CAF50.svg'></a> &nbsp;&nbsp;
+<a href="https://huggingface.co/zw121/SMFSR/tree/main"><img src="https://img.shields.io/badge/HuggingFace-Weights-FFD21E?logo=huggingface&amp;logoColor=FFD21E&amp;labelColor=333333"></a> &nbsp;&nbsp;
+<a href="https://modelscope.cn/models/wzhu00000/smfsr/files"><img src="https://img.shields.io/badge/ModelScope-Weights-624AFF.svg?logo=modelscope&amp;logoColor=white"></a>&nbsp;&nbsp;
 <a href='https://huggingface.co/zw121/SMFSR/blob/main/SMFSR_supp.pdf'><img src='https://img.shields.io/badge/Paper-Supplematary-orange.svg'></a> &nbsp;&nbsp;
 
 </div>
@@ -37,11 +42,14 @@
 </div> -->
 
 ## ⏰ Update
+2026.09.24: Our paper was accepted to NeurIPS 2026.
+2026.10.12: We will release the training code.
+- **2026.10.12**: We will release the training code.
+- **2026.09.24**: Our paper was accepted to NeurIPS 2026.
+- **2026.3.8**: Created this repository and released the inference code.
 
-- **2026.3.8**: Create this repo.
 
-
-:star: If SCMSR is helpful to you, please help star this repo. Thanks! 
+:star: If SMFSR is helpful to you, please help star this repo. Thanks! 
 
 ## 🌟 Overview Framework
 
@@ -133,13 +141,13 @@ preset/datasets/training_datasets/
         └── ...
 ```
 
-**Step 4: Start train**
+**Step 4: Start train (Coming Soon)**
 
-Use the following command to start the training process:
+<!-- Use the following command to start the training process:
 
 ```bash
 bash bash/train.sh
-```
+``` -->
 
 
 ## 🪪  License
