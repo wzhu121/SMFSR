@@ -43,7 +43,7 @@
 
 ## ⏰ Update
 
-- **2026.10.12**: We will release the training code.
+- **2026.10.19**: The training code is publicly available.
 - **2026.09.24**: Our paper was accepted to NeurIPS 2026.
 - **2026.3.8**: Created this repository and released the inference code.
 
