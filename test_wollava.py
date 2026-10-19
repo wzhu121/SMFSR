@@ -89,7 +89,7 @@ def load_text_encoders(class_one, class_two, class_three, args):
     return text_encoder_one, text_encoder_two, text_encoder_three
 
 
-def load_scmsr_pipeline(args, accelerator, sd3_transformer=None):
+def load_smfsr_pipeline(args, accelerator, sd3_transformer=None):
     
     weight_dtype = torch.float32
     if accelerator.mixed_precision == "fp16":
@@ -192,9 +192,9 @@ def main(args):
     # We need to initialize the trackers we use, and also store our configuration.
     # The trackers initializes automatically on the main process.
     if accelerator.is_main_process:
-        accelerator.init_trackers("scmsr")
+        accelerator.init_trackers("smfsr")
 
-    pipeline = load_scmsr_pipeline(args, accelerator)
+    pipeline = load_smfsr_pipeline(args, accelerator)
  
     if accelerator.is_main_process:
         generator = torch.Generator(device=accelerator.device)
@@ -276,7 +276,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--pretrained_model_name_or_path", type=str, default='stable-diffusion-3.5-medium')
-    parser.add_argument("--transformer_model_name_or_path", type=str, default='scmsr_q')
+    parser.add_argument("--transformer_model_name_or_path", type=str, default='smfsr_q')
     parser.add_argument("--prompt", type=str, default="") # user can add self-prompt to improve the results
     parser.add_argument("--added_prompt", type=str, default='Cinematic, hyper sharpness, highly detailed, perfect without deformations, '
                             'camera, hyper detailed photo - realistic maximum detail, 32k, Color '
