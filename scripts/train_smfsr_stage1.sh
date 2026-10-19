@@ -1,0 +1,16 @@
+CUDA_VISIBLE_DEVICES="0,1,2,3" accelerate launch --config_file multi-gpu.yaml  train_stage1.py \
+    --mixed_precision="fp16" \
+    --pretrained_model_name_or_path="preset/stable-diffusion-3.5-medium" \
+    --transformer_model_name_or_path="preset/teacher" \
+    --transformer_model_name_or_path_student="preset/teacher" \
+    --output_dir="./experiments/smfsr_stage1" \
+    --root_folders="preset/datasets/training_datasets/" \
+    --learning_rate=5e-5 \
+    --train_batch_size=4 \
+    --gradient_accumulation_steps=2 \
+    --validation_images_dir="present/benchmark_realsr/test_LR" \
+    --validation_txts_dir="present/prompt/realsr_txt" \
+    --validation_steps=2000 \
+    --checkpointing_steps=5000 \
+    --report_to="swandb" \
+    --wandb_project="SMFSR" \

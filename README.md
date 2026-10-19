@@ -71,8 +71,8 @@ git clone https://github.com/wzhu121/SMFSR.git
 cd SMFSR
 
 # create an environment with python >= 3.10
-conda create -n SMFSR python=3.10
-conda activate SMFSR
+conda create -n smfsr python=3.10
+conda activate smfsr
 pip install -r requirements.txt 
 ```
 
@@ -101,11 +101,13 @@ bash scripts/test_wllava.sh
 
 **Step 1: Download the training data**
 
-Download the training datasets including `DIV2K`, `DIV8K`, `Flickr2K`, `Flickr8K`, and `NKUSR8K` dataset.
+Download the training datasets including ```LSDIR``` and ```FFHQ``` (first 10k images).
 
 **Step 2: Download Teacher Checkpoint**
 
 - Download the [[Teacher](https://huggingface.co/zw121/SMFSR/tree/main)] checkpoints and place it in the `preset` directory.
+
+- **DINOv3 ConvNeXt-Large weights** — required for **training only**. Download and place under `dinov3_gan/dinov3_weights/`.
 
 **Step 3: Prepare the training data**
 
@@ -140,14 +142,15 @@ preset/datasets/training_datasets/
         └── ...
 ```
 
-**Step 4: Start train (Coming Soon)**
-
-<!-- Use the following command to start the training process:
+**Step 4: Training**
 
 ```bash
-bash bash/train.sh
-``` -->
+# Stage 1:
+bash scripts/train_stage1.sh
 
+# Stage 2: RL. Set lora_path in configs/dnf_sr.yml to your Stage-1 checkpoint first.
+bash scripts/train_stage2.sh
+```
 
 ## 🪪  License
 This project is released under the [Apache 2.0 license](LICENSE).
