@@ -772,7 +772,7 @@ def main(args):
                     bsz = model_input.shape[0]
                     # Sample a random timestep for each image
                     t = noise_scheduler.sample_timesteps(bsz, model_input.device)
-                    sigma_t = t # t = 1, data.    t = 0, noise
+                    sigma_t = t
                     alpha_t = 1 - (1 - 1e-6) * t
                     alpha_t = alpha_t.view(bsz, 1, 1, 1)
                     sigma_t = sigma_t.view(bsz, 1, 1, 1)
@@ -843,7 +843,7 @@ def main(args):
                     lam = torch.rand(bsz, device=model_input.device)
                     s = (1 - lam) * t + lam * r
 
-                    sigma_t = t # t = 1, data.    t = 0, noise
+                    sigma_t = t 
                     alpha_t = 1 - (1 - 1e-6) * t
                     alpha_t = alpha_t.view(bsz, 1, 1, 1)
                     sigma_t = sigma_t.view(bsz, 1, 1, 1)
@@ -912,7 +912,7 @@ def main(args):
                     lam = torch.rand(bsz, device=model_input.device)
                     s = (1 - lam) * t + lam * r
 
-                    sigma_t = t # t = 1, data.    t = 0, noise
+                    sigma_t = t 
                     alpha_t = 1 - (1 - 1e-6) * t
                     alpha_t = alpha_t.view(bsz, 1, 1, 1)
                     sigma_t = sigma_t.view(bsz, 1, 1, 1)

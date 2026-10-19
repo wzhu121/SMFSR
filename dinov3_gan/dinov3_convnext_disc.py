@@ -148,7 +148,7 @@ def get_pad_layer(pad_type):
 #         dims=[192, 384, 768, 1536],
 #     ),
 # }
-cur_path = "/home/test/zw/Split_Mean_flow_SR/dinov3_gan"
+cur_path = "dinov3_gan"
 class DINOv3ConvNeXt(torch.nn.Module):
     def __init__(self, dinov3_convnext_size):
         super().__init__()
