@@ -42,7 +42,7 @@ from diffusers.utils import check_min_version
 from diffusers.utils.torch_utils import is_compiled_module
 from models.transformer_sd3_interval import SD3Transformer2DModel_interval, LogitNormalCosineScheduler
 from dataloaders.realsr_dataset import PairedCaptionDataset
-from model.load_pipeline import load_smfsr_pipeline
+from models.load_pipeline import load_smfsr_pipeline
 from dinov3_gan.dinov3_convnext_disc import Dinov3ConvNeXtDiscriminator
 
 
