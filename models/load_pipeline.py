@@ -1,8 +1,47 @@
 import torch
-from diffusers import AutoencoderKL, FlowMatchEulerDiscreteScheduler
-from transformers import CLIPTokenizer, T5TokenizerFast
+
+from accelerate import Accelerator
+from diffusers import (
+    AutoencoderKL,
+    FlowMatchEulerDiscreteScheduler,
+)
+from transformers import CLIPTokenizer, PretrainedConfig, T5TokenizerFast
 
 from pipelines.pipeline_mean_flow_single_sr import StableDiffusion3ControlNetPipeline
+
+
+# Copied from dreambooth sd3 example
+def import_model_class_from_model_name_or_path(
+    pretrained_model_name_or_path: str, revision: str, subfolder: str = "text_encoder"
+):
+    text_encoder_config = PretrainedConfig.from_pretrained(
+        pretrained_model_name_or_path, subfolder=subfolder, revision=revision
+    )
+    model_class = text_encoder_config.architectures[0]
+    if model_class == "CLIPTextModelWithProjection":
+        from transformers import CLIPTextModelWithProjection
+
+        return CLIPTextModelWithProjection
+    elif model_class == "T5EncoderModel":
+        from transformers import T5EncoderModel
+
+        return T5EncoderModel
+    else:
+        raise ValueError(f"{model_class} is not supported.")
+
+# Copied from dreambooth sd3 example
+def load_text_encoders(class_one, class_two, class_three, args):
+    text_encoder_one = class_one.from_pretrained(
+        args.pretrained_model_name_or_path, subfolder="text_encoder", revision=args.revision, variant=args.variant
+    )
+    text_encoder_two = class_two.from_pretrained(
+        args.pretrained_model_name_or_path, subfolder="text_encoder_2", revision=args.revision, variant=args.variant
+    )
+    text_encoder_three = class_three.from_pretrained(
+        args.pretrained_model_name_or_path, subfolder="text_encoder_3", revision=args.revision, variant=args.variant
+    )
+    return text_encoder_one, text_encoder_two, text_encoder_three
+
 
 def load_smfsr_pipeline(args, accelerator, sd3_transformer=None):
     
