@@ -148,7 +148,7 @@ preset/datasets/training_datasets/
 # Stage 1:
 bash scripts/train_stage1.sh
 
-# Stage 2: RL. Set lora_path in configs/dnf_sr.yml to your Stage-1 checkpoint first.
+# Stage 2:
 bash scripts/train_stage2.sh
 ```
 
